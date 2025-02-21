@@ -15,7 +15,7 @@ const Home = () => {
           <br />
         <div className='lg:flex justify-between gap-4 lg:m-5'>
           < AllBlogs />
-          <div className='lg:w-[400px] '>
+          <div className='lg:w-[400px] lg:mt-0 mt-5'>
             <RightSide />
           </div>
         </div>

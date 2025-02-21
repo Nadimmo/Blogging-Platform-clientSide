@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AiFillLike } from "react-icons/ai";
-import { FaComment, FaCopy, FaFacebook, FaLinkedin, FaShare, FaTwitter, FaWhatsapp } from "react-icons/fa";
+import { FaBookmark, FaComment, FaCopy, FaFacebook, FaLinkedin, FaShare, FaTwitter, FaWhatsapp } from "react-icons/fa";
 import { IoMdSend } from "react-icons/io";
 
 const BlogCard = ({ blog }) => {
@@ -37,18 +37,19 @@ const BlogCard = ({ blog }) => {
 
 
     return (
-        <div key={blog.id} className="bg-white shadow-md rounded-lg overflow-hidden mb-6 border border-gray-200 p-4">
+        <div key={blog.id} className="bg-white shadow-md rounded-lg overflow-hidden mb-6 border border-gray-200 p-4 ">
             <img className="w-full h-64 object-cover rounded-2xl" src={blog.image} alt={blog.title} />
             <div>
                 <h3 className="text-lg font-semibold text-gray-800">{blog.title}</h3>
                 <p className="text-gray-500 text-sm">By {blog.author} • {blog.time} • <span className='font-medium'>{blog.category}</span></p>
             </div>
             <p className="text-gray-600 mt-2">{blog.description}</p>
-            <div className="flex justify-between items-center mt-4 text-gray-600 text-sm border-t pt-2">
+            <div className="flex justify-between items-center mt-4 text-gray-600 text-sm border-t pt-2 gap-1">
                 <button className={`flex items-center gap-1 ${liked ? 'text-blue-500' : ''}`}
                     onClick={handleLikeClick} > <AiFillLike className='text-2xl' /> Like {likes}</button>
                 <button onClick={handlerComment} className="flex items-center gap-1"> <FaComment className='text-2xl' /> Comment</button>
                 <button onClick={handlerShare} className="flex items-center gap-1"> <FaShare className='text-2xl' />Share </button>
+                <button  className="flex items-center gap-1"> <FaBookmark className='text-2xl' />Save </button>
             </div>
             {/* Comment Input Field */}
             {showComment && (
