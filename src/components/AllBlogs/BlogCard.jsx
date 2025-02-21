@@ -4,7 +4,7 @@ import { FaComment, FaCopy, FaFacebook, FaLinkedin, FaShare, FaTwitter, FaWhatsa
 import { IoMdSend } from "react-icons/io";
 
 const BlogCard = ({ blog }) => {
-    // console.log(blog)
+    
     const [liked, setLiked] = useState(false);
     const [likes, setLikes] = useState(blog.likes);
     const [showComment, setShowComment] = useState(false);
