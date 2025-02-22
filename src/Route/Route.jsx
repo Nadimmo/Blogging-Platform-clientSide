@@ -5,6 +5,7 @@ import {
 import Root from "../Root/Root";
 import Home from "../pages/Home/Home";
 import About from "../pages/About/About";
+import AllBlogs from "../pages/AllBlogs/AllBlogs";
 
 const Route = createBrowserRouter([
     {
@@ -19,6 +20,10 @@ const Route = createBrowserRouter([
             {
                 path: '/about',
                 element: <About></About>
+            },
+            {
+                path:'/allBlogs',
+                element: <AllBlogs></AllBlogs>
             }
         ]
     }

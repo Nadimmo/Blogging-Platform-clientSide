@@ -77,7 +77,7 @@ const allBlogs = [
   },
 ];
 
-const AllBlogs = () => {
+const LeftSideBlogs = () => {
   // console.log(blog)
   const [currentPage, setCurrentPage] = useState(1);
   const postsPerPage = 3 // Number of posts to display per page
@@ -139,4 +139,4 @@ const AllBlogs = () => {
   );
 };
 
-export default AllBlogs;
+export default LeftSideBlogs;

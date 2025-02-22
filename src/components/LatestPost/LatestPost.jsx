@@ -1,7 +1,3 @@
-import React from 'react';
-import { AiFillLike } from 'react-icons/ai';
-import { FaComment, FaEye, FaShare } from 'react-icons/fa';
-
 const latestBlogs = [
   {
     id: 1,
@@ -10,10 +6,6 @@ const latestBlogs = [
     image: "https://i.ibb.co.com/L06xgX8/writer.jpg",
     author: "John Doe",
     category: "Technology",
-    comments: 24,
-    views: 100,
-    likes: 50,
-    time: "10 minutes ago"
   },
   {
     id: 2,
@@ -22,10 +14,6 @@ const latestBlogs = [
     image: "https://i.ibb.co.com/L909ycM/remote.jpg",
     author: "Jane Smith",
     category: "Writing",
-    comments: 18,
-    views: 85,
-    likes: 40,
-    time: "30 minutes ago"
   },
   {
     id: 3,
@@ -34,10 +22,6 @@ const latestBlogs = [
     image: "https://i.ibb.co.com/604gSjQf/bg.jpg",
     author: "Emily Johnson",
     category: "Marketing",
-    comments: 35,
-    views: 200,
-    likes: 75,
-    time: "1 hour ago"
   }
 ];
 
@@ -57,14 +41,7 @@ const LatestPost = () => {
                 <p><span className='font-bold'>By</span>: {blog.author}</p>
                 <p><span className='font-bold'>Category</span>: {blog.category}</p>
               </div>
-              <p className="text-gray-600 mb-3 ">{blog.description}</p>
-              <p className="text-sm text-gray-500">Last updated: {blog.time}</p>
-              <div className="flex justify-between mt-4 gap-4 text-gray-600 text-sm">
-                <p className="flex items-center gap-1"> <AiFillLike className='text-2xl' /> {blog.likes}</p>
-                <p className="flex items-center gap-1"> <FaComment  className='text-2xl'/> {blog.comments}</p>
-                <p className="flex items-center gap-1"><FaEye  className='text-2xl'/> {blog.views}</p>
-                <a href='#' className="text-blue-500 underline">Read More</a>
-              </div>
+              <p className="text-gray-600 mb-3 ">{blog.description}</p>              
             </div>
           </div>
         ))}
