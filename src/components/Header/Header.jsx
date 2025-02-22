@@ -6,13 +6,12 @@ const Header = () => {
         <li><NavLink to="/" className="text-lg font-medium hover:text-blue-500 transition">Home</NavLink></li>
         <li><NavLink to="/about" className="text-lg font-medium hover:text-blue-500 transition">About us</NavLink></li>
         <li><NavLink to="/allBlogs" className="text-lg font-medium hover:text-blue-500 transition">All Blogs</NavLink></li>
-        <li><NavLink to="/singleBlogs" className="text-lg font-medium hover:text-blue-500 transition">Single Blogs</NavLink></li>
         <li><NavLink to="/dashboard" className="text-lg font-medium hover:text-blue-500 transition">Dashboard</NavLink></li>
         <li><NavLink to="/contact" className="text-lg font-medium hover:text-blue-500 transition">Contact</NavLink></li>
     </>;
 
     return (
-        <div className=" fixed z-10  navbar bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-4 shadow-lg">
+        <div className=" fixed z-10  navbar bg-gradient-to-r from-white to-base-300 text-[#000] py-4 shadow-lg">
             <div className="navbar-start flex items-center ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

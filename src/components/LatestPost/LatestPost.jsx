@@ -32,8 +32,8 @@ const LatestPost = () => {
       <p className="text-center text-gray-600 text-sm mb-4">Discover the latest news, insights, and articles from the industry.</p>
       <div className=" mx-auto grid md:grid-cols-3 gap-6 px-4">
         {latestBlogs.map(blog => (
-          <div key={blog.id} className="bg-white shadow-md rounded-xl overflow-hidden border border-gray-200">
-            <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover" />
+          <div key={blog.id} className="bg-white shadow-md rounded-xl overflow-hidden border border-gray-200 transition-transform transform hover:scale-105 duration-300">
+            <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover transition-transform transform hover:scale-110 duration-300" />
             {/* // Blog content */}
             <div className="p-4 flex flex-col">
               <h3 className="text-xl font-semibold text-gray-800 mb-2">{blog.title}</h3>

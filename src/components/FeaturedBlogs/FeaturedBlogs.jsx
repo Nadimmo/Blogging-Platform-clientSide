@@ -31,7 +31,24 @@ const featuresBlogs = [
         image: "https://i.ibb.co.com/TrnPKBH/marketing.jpg",
         author: "Sarah Thompson",
         category: "Marketing",
+    },
+    {
+        id: 5,
+        title: "The Impact of Social Media on Online Marketing",
+        description: "Learn how social media is changing the way businesses reach and engage with their audience.",
+        image: "https://i.ibb.co.com/WGRPcbP/product.jpg",
+        author: "Jane Smith",
+        category: "Technology",
+    },
+    {
+        id: 6,
+        title: "The Evolution of Online Marketing",
+        description: "Discover how online marketing has evolved over the years and how it continues to shape the future of businesses.",
+        image: "https://i.ibb.co.com/qMKR47SS/marketingd.jpg",
+        author: "Sarah Thompson",
+        category: "Marketing",
     }
+
 ];
 
 const FeaturedBlogs = () => {
@@ -41,7 +58,7 @@ const FeaturedBlogs = () => {
             <p className="text-center text-gray-600 text-sm mb-4">Explore the latest insights, trends, and strategies from the industry.</p>
             <div className=" mx-auto grid md:grid-cols-3 gap-6 px-4">
                 {featuresBlogs.map(blog => (
-                    <div key={blog.id} className="bg-white shadow-md rounded-xl overflow-hidden border border-gray-200">
+                    <div key={blog.id} className="bg-white shadow-lg rounded-xl overflow-hidden border border-gray-200 transition-transform transform hover:scale-110 duration-300">
                         <img src={blog.image} alt={blog.title} className="w-full h-64 object-cover" />
                         {/* // Blog content */}
                         <div className="p-4 flex flex-col">

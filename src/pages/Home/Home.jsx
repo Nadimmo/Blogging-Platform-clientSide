@@ -5,6 +5,7 @@ import FeaturedBlogs from '../../components/FeaturedBlogs/FeaturedBlogs'
 import Categories from '../../components/Categories/Categories'
 import Author from '../../components/Author/Author'
 import Testimonials from '../../components/Testimonials/Testimonials'
+import Subscription from '../../components/Subscription/Subscription'
 
 const Home = () => {
   return (
@@ -15,6 +16,7 @@ const Home = () => {
       <Categories/>
       <Author/>
       <Testimonials/>
+      <Subscription/>
     </div>
   )
 }

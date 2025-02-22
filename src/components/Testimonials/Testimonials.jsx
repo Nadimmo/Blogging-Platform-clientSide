@@ -31,7 +31,7 @@ const Testimonials = () => {
     ];
 
     return (
-        <section data-aos="fade-up-left" className="bg-gray-50 py-16">
+        <section data-aos="fade-up-left" className=" py-16">
             <div className="max-w-7xl mx-auto px-6">
                 <h2 className="text-4xl font-bold text-center text-gray-900 mb-10">
                     What Our Users Say
