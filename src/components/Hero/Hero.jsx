@@ -3,7 +3,7 @@ import { TypeAnimation } from 'react-type-animation'
 const Hero = () => {
     return (
         <div
-            className="hero lg:h-[500px] bg-cover "
+            className="hero lg:h-[500px] bg-cover mt-16 "
             style={{
                 backgroundImage: "url(https://i.ibb.co.com/604gSjQf/bg.jpg)",
             }}>

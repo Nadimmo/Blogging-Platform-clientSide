@@ -12,8 +12,8 @@ const Header = () => {
     </>;
 
     return (
-        <div className="navbar bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-4 shadow-lg">
-            <div className="navbar-start flex items-center">
+        <div className=" fixed z-10  navbar bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-4 shadow-lg">
+            <div className="navbar-start flex items-center ">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
                         <svg
